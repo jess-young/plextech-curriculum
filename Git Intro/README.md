@@ -51,4 +51,4 @@ Click [here](https://www.atlassian.com/git/tutorials/using-branches) for more in
 
 ## Conclusion
 
-Something something something
+*Submission info and other stuff
