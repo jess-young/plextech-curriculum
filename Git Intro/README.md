@@ -22,6 +22,7 @@ Click [here](https://www.atlassian.com/git/tutorials/syncing#) for more informat
 
 ## Pushing/Pulling
 When working on projects, you are going to be constantly pushing and pulling code to update/get updates from your repos. Let's push the screenshot that we just created to our repository.
+A "commit" is a list of changes that is stored by git. Committing only affects your local Git record.
 1. Type `git add Git\ Intro/<IMAGE-NAME>` to stage the file.
 2. Type `git commit -m "image added"` to commit your change.
 3. Type `git push origin main` to push your changes to the main branch.
