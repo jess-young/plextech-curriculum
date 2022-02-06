@@ -20,7 +20,7 @@ Note that you will have to enter your virtual environment each time you work to 
 - It also runs many other requests depending on the html response of the server, to render components, etc.
 - Postman provides a flexible interface to make customized requests with a variety of payloads with all kinds of HTTP methods
 
-## Part 1: Basic Gets
+## Basic GET Request
 - Enter "google.com" in your browser. Now enter "google.com" in Postman with the GET method. What do you notice?
 - Now let us create a server of our own!
 
