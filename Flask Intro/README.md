@@ -79,7 +79,7 @@ app.run(host='0.0.0.0', port=81)
 - HTTP responses can take various forms: plain text (like we did before), JSON, HTML (which https://google.com/ responds with), and even files like PDFs, and images (which we won't go over today)
 - Make your server code have two other routes:
     - /hello-json, which returns a dictionary: {"text": "Hello World from Dictionary"}
-    - /hello-html, which returns "<h1>Hello World</h1><p>Subtext</p>"
+    - /hello-html, which returns "&lt;h1>Hello World&lt;/h1>&lt;p>Subtext&lt;/p>"
 - Test these out from your browser/postman
 - HTTP responses also have status codes. These tell your browser/application about if the request was successful or not. If you return a tuple in a route function, the second element is treated as the status code
 - Make your server code have the /hello-html-error route, which returns the same as /hello-html but with a 404 status code. Look at how your browser renders this!
