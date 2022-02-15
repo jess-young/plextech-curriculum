@@ -1,5 +1,5 @@
 def foo(x):
-    if x in [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]:
+    if x % 3 == 0:
         print("Foo")
     else:
         print("Bar")
