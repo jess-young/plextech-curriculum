@@ -27,11 +27,17 @@ All together, this is what your HTML documents will look like:
 
 In this project folder, there is a file called `activity.html` where you will be adding onto for this into project. To open the file in Git Bash, navigate to this folder and type `start ./activity.html`.
 
+You will see that this will open an empty page. For this part of the project, we will be adding titles, favicons, and other pieces of metadata to our template. Complete the following tasks:
 
+- Add a title of your choice to the webpage
+- Add a favicon of your choice to the webpage
+- Change the author of your webpage to you
+- Add a custom description to your webpage
+
+*You won't be able see some of these changes reflected in you web page, why?*
 
 ## Elements
-go through common elements
-p, h1-hx, images, tables, attributes, intro styling
+While we've learned how to ...
 
 ## Javascript
 using javascript to capture events
