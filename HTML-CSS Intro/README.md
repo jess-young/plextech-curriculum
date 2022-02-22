@@ -25,7 +25,9 @@ All together, this is what your HTML documents will look like:
 </html>
 ```
 
-add activity
+In this project folder, there is a file called `activity.html` where you will be adding onto for this into project. To open the file in Git Bash, navigate to this folder and type `start ./activity.html`.
+
+
 
 ## Elements
 go through common elements
