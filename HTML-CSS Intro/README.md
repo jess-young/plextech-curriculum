@@ -37,7 +37,18 @@ You will see that this will open an empty page. For this part of the project, we
 *You won't be able see some of these changes reflected in you web page, why?*
 
 ## Elements
-While we've learned how to ...
+While we've learned how to modify the metadata for our site and play around with a few tags, we still have the main part of our HTML page to build out. These are the components that go between the `<body>...</body>` tags and make up what we actually see on our webpage. Each of these components are defined by opening and closing tags along with attributes to define how each of the components function.
+
+These are some of the more common tags that you will encounter: #TODO: add descriptions
+- `<div>`
+- `<p>`
+- `<h1>` to `<h6>`
+- `<img>`
+- `<ul>`, `<ol>`, and `<li>`
+
+#TODO: task
+
+go through common elements p, h1-hx, images, tables, attributes, intro styling
 
 ## Javascript
 using javascript to capture events
