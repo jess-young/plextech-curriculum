@@ -46,15 +46,14 @@ These are some of the more common tags that you will encounter:
 - `<img>` - HTML element for embedding images.
 - `<ul>`, `<ol>`, and `<li>` - Element for different types of lists (ordered, unordered, etc.).
 
-Let's add on to the page we've created in the previous section. Fill out the body to create a template for your new wedsite and add some content (be creative!). Feel free to follow the template given below or create your own. Make sure to add the following elements:
+You are able to customize the function of your tags using attributes. Most notably, you are able to use the `style` attribute with many of your tags to change the appearance or formatting of the tag, with each style attribute separated with semicolons. 
+
+Let's add on to the page we've created in the previous section. Fill out the body to create a template for your new wedsite and add some content. Please follow the template given below. Make sure to add the following elements:
 
 - A header with a title
 - Some sort of sidebar or navbar
-- A main body where you can add the following:
-    - At least one image
-    - A body of text (be creative!)
-    - A list or table of information
-- A footer at the bottom
+- A main body where you will incorporate **all of the elements above**
+- A footer at the bottom'
 
 *Note: For now, just use inline styling*
 
@@ -67,9 +66,29 @@ Let's add on to the page we've created in the previous section. Fill out the bod
 ## Javascript
 So far we've created a webpage and filled it out with some basic information, but we can't really interact with it in any way. You maybe know that there is a `<button>` tag, but (as far as we know) there's no way for it to do anything. To add functionality to our page, we are able to use Javascript and the `<script>` tag to implement event listeners. 
 
-Inside of your `<body>`, you are able to add `<script>` tags to embed client side Javacript code. These can then be added to certain elements of your page as event listeners that will call the function when the event occurs. 
+Inside of your `<body>`, you are able to add `<script>` tags to embed client side Javacript code. These can then be added to certain elements of your page as event listeners that will call the function when the event occurs. For instance, consider the following block of code:
 
+```
+<script>
+    let d = new Date();
+    document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+</script>
+```
 
+Adding this to the body will display today's date in `<h1>` tags. Additionally, you can define the `id` attribute of your elements and refer to that elements using `document.getElementById(id)`. Then, you are able to define a function under `<script>` and attach it to a button's `onclick` event listener. For example, the following will chance the color style attribute of the `<p>` element on a button press.
+
+```
+<p id="demo">click on the button</p>
+<button onclick="black()">Change to black</button>
+<script>
+    function black() {
+        var el = document.getElementById("demo");
+        el.style.color="#000000";
+    }
+</script>
+```
+
+Now lets add some scripts to make your page more interactive. Your task is to add two buttons in your header that will enable a "light" and "dark" mode for your page. These modes should change the background colors and font colors of the page. Feel free to choose your colors as you wish, but make sure to incorporate a variety of different shades for each theme. 
 
 ## CSS Styling
 styling information
