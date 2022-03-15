@@ -66,6 +66,10 @@ Let's add on to the page we've created in the previous section. Fill out the bod
 ## Javascript
 So far we've created a webpage and filled it out with some basic information, but we can't really interact with it in any way. You maybe know that there is a `<button>` tag, but (as far as we know) there's no way for it to do anything. To add functionality to our page, we are able to use Javascript and the `<script>` tag to implement event listeners. 
 
+While this project isn't specifically about Javascript, there is some syntax that you should know before adding script into your HTML.
+
+
+
 Inside of your `<body>`, you are able to add `<script>` tags to embed client side Javacript code. These can then be added to certain elements of your page as event listeners that will call the function when the event occurs. For instance, consider the following block of code:
 
 ```
@@ -79,11 +83,11 @@ Adding this to the body will display today's date in `<h1>` tags. Additionally, 
 
 ```
 <p id="demo">click on the button</p>
-<button onclick="black()">Change to black</button>
+<button onclick="green()">Change to green</button>
 <script>
-    function black() {
+    function green() {
         var el = document.getElementById("demo");
-        el.style.color="#000000";
+        el.style.color="#00FF00";
     }
 </script>
 ```
