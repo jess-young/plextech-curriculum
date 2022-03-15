@@ -68,7 +68,17 @@ So far we've created a webpage and filled it out with some basic information, bu
 
 While this project isn't specifically about Javascript, there is some syntax that you should know before adding script into your HTML.
 
+In Javascript, variables are declared with keywords that define what you are able to do with them. These keywords are `const`, `var`, and `let`. The `const` keyword sets the reference of the variable to be read-only, so that reassigning its referene is not allowed. On the other hand `var` and `let` allows you to change the reference and only differ in the scope of which the variables are declared. For the purposes of this project, you don't need to know the difference.
 
+Functions are defined with the `function` keywords, along with the name and parameters:
+
+```
+function name(p1, p2) {
+    // BODY
+}
+```
+
+In order to reference the elements in your page, you will need to use the `document` objects, which is a predefined variable that refers to the HTML page. So if you want to change a specific element within your page, you would refer to it with `document.getElementById(id)`. *There are many other things you can do with it.* 
 
 Inside of your `<body>`, you are able to add `<script>` tags to embed client side Javacript code. These can then be added to certain elements of your page as event listeners that will call the function when the event occurs. For instance, consider the following block of code:
 
@@ -95,8 +105,49 @@ Adding this to the body will display today's date in `<h1>` tags. Additionally, 
 Now lets add some scripts to make your page more interactive. Your task is to add two buttons in your header that will enable a "light" and "dark" mode for your page. These modes should change the background colors and font colors of the page. Feel free to choose your colors as you wish, but make sure to incorporate a variety of different shades for each theme. 
 
 ## CSS Styling
-styling information
+The last thing that we will be covering is CSS. In general, there are three types of CSS that you can apply to your HTML web page. 
 
-## Big one
- - Take some inspiration from last year for flexboxes
- - This one should cover html, img, hyperlinks, html table, basic javascript (button clicking changing stuff), css styling (padding, margin, size), flexboxes
+- Inline - Adding styling within the `style` attribute of the element
+- Internal - Adding styling within the `<style>` tag
+- External - Adding styling within a CSS file and linking to with a `<link>` tag
+
+So far, you've only used inline styling to style your pages. However, you can probably see how this can become more and more messy. Internal styling improves upon this by moving the styles that you apply into a separate section within your code. But ideally, you would want to move your styling into a different file completely and link the sheet to your HTML page. This will help with readability, reduce redundancies in your code, and is just generally a good coding practice.
+
+All CSS files end with the `.css` extention. These files will look very different from a lot of other code you might have written. These style sheets consist of a series of selectors, which you use to choose what to apply your styling to, and the actual styling. So the file will look something like this:
+
+```
+p {
+    color: green
+}
+
+.example {
+    font-size: 30px
+}
+
+div > h1 {
+    color: red
+}
+```
+
+Let's break these down. 
+
+The `p` selector selects all `<p>` tags and applies the styling to those elements. If you want to apply the same styling to multiple tags, you can chain the selectors together with spaces (if you want to also apply it to `h1`, the selector would be `p h1`). 
+
+The `.example` selector selects all elements with the `example` class name. These would be those with `example` as an element's `class` attribute. Similar to the element selectors, you are able to chain these to apply the stylings with different classes. Instead of spaces, these selectors would be separated with `.`. (ex. `.example.other` applies the styling to classnames `example` and `other`). You can also apply several classnames to a single elements. For example, `class="example other"` applies the styles associated with `example` and `other`.
+
+Finally, the `div > h1` selector selects all `h1` elements that is a child of a `div`. So if your HTML looks like this:
+
+```
+<h1>Hello</h1>
+<div>
+    <h1>World</h1>
+</div>
+```
+
+Only "World" would be styled.
+
+Of course, this is just a small sample of all the selectors and styles that you can apply. If there is something specific that you want to style in a certain way, you should check out a reference sheet for CSS.
+
+In order to finally link your sheet into your HTML, you will need to use a `<link>` element at the `head` of your file (`<link rel="stylesheet" href="example.css">`).
+
+Now to finish up your project, transfer your inline styles into an external style sheet.
