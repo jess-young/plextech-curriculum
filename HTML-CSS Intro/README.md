@@ -170,17 +170,17 @@ Also feel free to use online resources such as Stack Overflow, MDN, W3, and Goog
 
 When you open the provided HTML file `part1/index.html` , it should look like this:
 
-![part1-initial-look.png](part1-initial-look.png)
+![part1-initial-look.png](images/part1-initial-look.png)
 
 As you can see, there are 9 rectangles. The styling and makeup of the first two rectangles are already built for you. 
 
 **Your task is to apply stylings and add div elements inside of the next 7 green rectangular blocks to create a webpage that looks like this:**
 
-![part1-finished-look.png](part1-finished-look.png)
+![part1-finished-look.png](images/part1-finished-look.png)
 
 Note that these rectangular blocks should be *responsive*. Here is what they look like when the window is thinner:
 
-![part1-finished-narrowed-look.png](part1-finished-narrowed-look.png)
+![part1-finished-narrowed-look.png](images/part1-finished-narrowed-look.png)
 
 ## Row Information
 
