@@ -52,7 +52,7 @@ Let's add on to the page we've created in the previous section. Fill out the bod
 
 - A header with a title
 - Some sort of sidebar or navbar
-- A main body where you will incorporate **all of the elements above**
+- A main body where you will incorporate many images
 - A footer at the bottom'
 
 - Use flexboxes for positioning, check out how to use it and what it is here: [Guide to FlexBoxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). You will use this more later.
