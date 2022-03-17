@@ -48,20 +48,20 @@ These are some of the more common tags that you will encounter:
 
 You are able to customize the function of your tags using attributes. Most notably, you are able to use the `style` attribute with many of your tags to change the appearance or formatting of the tag, with each style attribute separated with semicolons. 
 
-Let's add on to the page we've created in the previous section. Fill out the body to create a template for your new wedsite and add some content. Please follow the template given below. Make sure to add the following elements:
+Let's add on to the page we've created in the previous section. Fill out the body to create a template for your new website and add some content. Please follow the template given below. Make sure to add the following elements:
 
 - A header with a title
 - Some sort of sidebar or navbar
 - A main body where you will incorporate **all of the elements above**
 - A footer at the bottom'
 
+- Use flexboxes for positioning, check out how to use it and what it is here: [Guide to FlexBoxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). You will use this more later.
+
 *Note: For now, just use inline styling*
 
 ![sample](images/example.png)
 
 *Hint: You will want to plan out how your page looks beforehand*
-
-*Hint 2: Flexboxes*
 
 ## Javascript
 So far we've created a webpage and filled it out with some basic information, but we can't really interact with it in any way. You maybe know that there is a `<button>` tag, but (as far as we know) there's no way for it to do anything. To add functionality to our page, we are able to use Javascript and the `<script>` tag to implement event listeners. 
@@ -150,4 +150,73 @@ Of course, this is just a small sample of all the selectors and styles that you 
 
 In order to finally link your sheet into your HTML, you will need to use a `<link>` element at the `head` of your file (`<link rel="stylesheet" href="example.css">`).
 
-Now to finish up your project, transfer your inline styles into an external style sheet.
+Now, transfer your inline styles into an external style sheet.
+
+---
+
+# Divs and Rectangles
+
+## Intro
+
+Now that you understand some of the basics of HTML and CSS, let’s take a look at how to align HTML elements. There are multiple ways to align HTML elements, but in this part, we recommend using flexboxes as they are widely used in modern web development (for example BootstrapV4 is built on top of flexboxes).
+
+## Resources 
+
+Refer to this great webpage on how to use flexboxes: [CSS Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+
+Also feel free to use online resources such as Stack Overflow, MDN, W3, and Google for reference.
+
+## Your Task
+
+When you open the provided HTML file `part1/index.html` , it should look like this:
+
+![part1-initial-look.png](part1-initial-look.png)
+
+As you can see, there are 9 rectangles. The styling and makeup of the first two rectangles are already built for you. 
+
+**Your task is to apply stylings and add div elements inside of the next 7 green rectangular blocks to create a webpage that looks like this:**
+
+![part1-finished-look.png](part1-finished-look.png)
+
+Note that these rectangular blocks should be *responsive*. Here is what they look like when the window is thinner:
+
+![part1-finished-narrowed-look.png](part1-finished-narrowed-look.png)
+
+## Row Information
+
+3. For the third row, the red and blue end rectangles should remain the same width, and the green space should shrink.
+
+    *Possible Approach: Have a div with a red background and a div with a blue background, both with fixed width. Use an appropriate value for Justify Content.*
+
+4. For the fourth row, the blue end rectangle should remain the same width, and the red rectangle should shrink.
+
+    *Possible Approach: Have a div with a red background and a div with a blue background. Have a fixed width on the blue div. Use Flex Grow.*
+
+5. For the fifth row, the red square should remain the same size, but always remain in the center of the green rectangle.
+
+    *Hint: Think about how to keep a div fixed size and how to align something in the absolute center of the parent element.*
+
+6. For the sixth row, the blue rectangle should remain the same size, while the red rectangles should shrink. The blue rectangle should remain in the center of the row.
+
+    *Hint: Use two red divs.*
+
+7. For the seventh row, the red rectangle should remain the same width.
+
+    *Hint: Nest divs and use background-color: transparent*
+
+8. For the eighth row, the orange rectangles should remain the same size while the green space between them shrinks.
+
+9. For the ninth row, the green space between the orange rectangles should remain the same width while the orange rectangles narrow.
+
+## Additional Information
+
+You should only have to use the div html element to complete this assignment. Also, none of the divs you create inside of the provided wrapper divs should have `background-color: green;`. But it is valid to specify non-green background colors for any divs, including the wrapper.
+
+Try to style the boxes as closely to the solution image as possible don't worry about getting exact dimensions or rgb values. We care about what structure, CSS styles you used, and the dynamic behavior of the page. However just for reference,
+
+- The color of the boxes we used are `background-color: red` , `blue` , and `orange`
+
+- Some width/height values we used are `20px`, `40px`, `80px`
+
+## Contributions
+Thank you to Brown University's CSCI 1320 for providing the spec and the starter code.
