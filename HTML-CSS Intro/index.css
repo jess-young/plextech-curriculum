@@ -46,3 +46,150 @@ p {
 }
 
 /* TODO: Add CSS for the rest of your solution below */
+.row3 {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.red3 {
+  width: 80px;
+  background-color: red;
+}
+
+.blue3 {
+  width: 80px;
+  background-color: blue;
+}
+
+.row4 {
+  display: flex;
+  flex: 1;
+}
+
+.red4 {
+  flex-grow: 1;
+  background-color: red;
+}
+
+.blue4 {
+  width: 80px;
+  background-color: blue;
+}
+
+.row5 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.red5 {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+.row6 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.red6a {
+  flex-grow: 1;
+  background-color: red;
+}
+
+.blue6 {
+  width: 80px;
+  background-color: blue;
+}
+
+.red6b {
+  flex-grow: 1;
+  background-color: red;
+}
+
+.row7 {
+  display: flex;
+  flex: 1;
+}
+
+.red7 {
+  width: 80px;
+  background-color: red;
+}
+
+.blue7 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blue7a {
+  height: 20px;
+  background-color: blue;
+}
+
+.blue7b {
+  height: 20px;
+  background-color: blue;
+}
+
+.row8 {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.orange8a {
+  width: 80px;
+  background-color: orange;
+}
+
+.orange8b {
+  width: 80px;
+  background-color: orange;
+}
+
+.orange8c {
+  width: 80px;
+  background-color: orange;
+}
+
+.orange8d {
+  width: 80px;
+  background-color: orange;
+}
+
+.row9 {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.orange9a {
+  flex-grow: 1;
+  background-color: orange;
+}
+
+.orange9b {
+  flex-grow: 1;
+  background-color: orange;
+}
+
+.orange9c {
+  flex-grow: 1;
+  background-color: orange;
+}
+
+.orange9d {
+  flex-grow: 1;
+  background-color: orange;
+}
+
+.orange9e {
+  flex-grow: 1;
+  background-color: orange;
+}

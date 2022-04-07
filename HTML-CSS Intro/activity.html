@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="activity.css">
         <meta name="description" content="a random collection of nonsense.">
         <meta name="author" content="jessica young">
         <title>a mess.</title>
         <link rel="icon" type="image/x-icon" href="https://ih1.redbubble.net/image.908030728.6703/poster,504x498,f8f8f8-pad,600x600,f8f8f8.u2.jpg">
+        
+        <style>
+            
+        </style>
+
     </head>
+
+    <body>
+        <script>
+            let d = new Date();
+            document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+        </script>
+        
+        <header id="header">
+            <h1>header</h1>
+            <div class="button_container">
+                <button onclick="light()">light mode</button>
+                <button onclick="dark()">dark mode</button>
+                <script>
+                    function light() {
+                        var head_elem = document.getElementById("header");
+                        var foot_elem = document.getElementById("footer");
+                        var aside_elem = document.getElementById("aside");
+                        var article_elem = document.getElementById("article");
     
-    <div class="header">
-        <h1>a header.</h1>
-        <p>stuff.</p>
-    </div>
-
-    <div class="aside">
-        <h1>an aside.</h1>
-        <p>stuff.</p>
-    </div>
-
-    <div class="article">
-        <h1>an article.</h1>
-        <p>stuff.</p>
-        <img src="https://ih1.redbubble.net/image.1039708592.7861/pp,840x830-pad,1000x1000,f8f8f8.u4.jpg" alt="a mess sometimes">
-    </div>
-
-    <div class="footer">
-        <h1>a footer.</h1>
-        <p>stuff.</p>
-    </div>
+                        head_elem.style.backgroundColor="#CCCCCC";
+                        head_elem.style.color="#000000";
+                        
+                        foot_elem.style.backgroundColor="#CCCCCC"
+                        foot_elem.style.color="#000000";
+    
+                        aside_elem.style.backgroundColor="#AFF7F7";
+    
+                        article_elem.style.backgroundColor="#E9D1FF";
+                    }
+                    
+                    function dark() {
+                        var head_elem = document.getElementById("header");
+                        var foot_elem = document.getElementById("footer");
+                        var aside_elem = document.getElementById("aside");
+                        var article_elem = document.getElementById("article");
+    
+                        head_elem.style.backgroundColor="#000000";
+                        head_elem.style.color="#FFFFFF";
+                        
+                        foot_elem.style.backgroundColor="#000000"
+                        foot_elem.style.color="#FFFFFF";
+    
+                        aside_elem.style.backgroundColor="#69D6D6";
+                        
+                        article_elem.style.backgroundColor="#C8A6E6";
+                    }
+                </script>
+            </div>
+        </header>
+        <div class="container">
+            <div class="aside" id="aside">
+                <h1>aside</h1>
+            </div>
+            <div class="article" id="article">
+                <h1>article</h1>
+                <div class="writing">
+                    some random words go here.
+                </div>
+                <div class="image">
+                    <img src="https://ih1.redbubble.net/image.1039708592.7861/pp,840x830-pad,1000x1000,f8f8f8.u4.jpg"
+                        alt="a mess sometimes"
+                        width="200"
+                        height="200">
+                </div>
+                <div class="image">
+                    <img src="https://brookfarm.com/wp-content/uploads/2018/03/BerkshiresHotAirBalloonRide.jpg" 
+                    alt="hot air balloon"
+                    width="200"
+                    height="200">
+                </div>
+                <div class="image">
+                    <img src="https://organicfeeds.com/wp-content/uploads/2021/03/How-To-Raise-A-Baby-Duck-scaled-1.jpg" 
+                    alt="baby duck"
+                    width="200"
+                    height="200">
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <h1>footer</h1>
+        </footer>
+        
+    </body>
 
 </html>

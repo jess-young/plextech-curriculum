@@ -1,0 +1,43 @@
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+
+.container {
+    display: inline-flex;
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+
+.image {
+    display: inline-flex;
+}
+
+.aside {
+    background-color: rgb(105, 214, 214);
+    color: black;
+    margin: 5px;
+    padding: 80px 100px;
+}
+
+.article {
+    background-color: rgb(200, 166, 230);
+    color: black;
+    margin: 5px;
+    padding: 80px 80px;
+}
+
+.writing {
+    padding: 20px 0px 20px 0px;
+}
+
+.button_container {
+    display: inline-flex;
+}
